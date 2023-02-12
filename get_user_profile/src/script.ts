@@ -1,7 +1,7 @@
 // Because this is a literal single page application
 // we detect a callback from Spotify by checking for the hash fragment
 
-const clientId = "79bedb443d674b4fad1d34658d8f394b";  // Replace with your client id
+const clientId = "client id here";  // Replace with your client id
 const params = new URLSearchParams(window.location.hash.substring(1));
 const code = params.get("access_token");
 
