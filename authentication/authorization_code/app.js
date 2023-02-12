@@ -6,16 +6,16 @@
  * For more information, read
  * https://developer.spotify.com/web-api/authorization-guide/#authorization_code_flow
  */
-
+var SpotifyWebApi = require('spotify-web-api-node');
 var express = require('express'); // Express web server framework
 var request = require('request'); // "Request" library
 var cors = require('cors');
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
-var client_id = 'CLIENT_ID'; // Your client id
-var client_secret = 'CLIENT_SECRET'; // Your secret
-var redirect_uri = 'REDIRECT_URI'; // Your redirect uri
+var client_id = '79bedb443d674b4fad1d34658d8f394b'; // Your client id
+var client_secret = '888a19bc58a34ec9ad437da8c92a1ac7'; // Your secret
+var redirect_uri = 'http://localhost:8888/'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
